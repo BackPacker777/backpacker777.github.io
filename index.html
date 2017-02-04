@@ -2,108 +2,96 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>PWA-Dicer-NN</title>
-    <link href="/public/css/override.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/public/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/public/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/public/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/public/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/public/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="/manifest.json">
+  <meta charset="utf-8">
+  <title>PWA-Dicer-NN</title>
+  <link href="/public/css/override.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/public/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/public/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/public/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/public/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/public/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
 <div class="row blue">
-    <div class="medium-4 columns tall">
-        <h1 class="v-center">The Dicer</h1>
-    </div>
+  <div class="medium-4 columns tall">
+    <h1 class="v-center">The Dicer</h1>
+  </div>
 </div>
 <br><br>
 <div class="row">
-    <div class="medium-4 medium-centered columns text-center">
-        <img src="/public/images/10Dice.png" alt="dice">
-    </div>
+  <div class="medium-4 medium-centered columns text-center">
+    <img src="/public/images/10Dice.png" alt="dice">
+  </div>
 </div>
 <br><br><br><br>
 <form id="rollResults">
-    <div class="row">
-        <div class="medium-6 medium-centered columns text-center">
-            <h1>Dice QTY:</h1>
-        </div>
+  <div class="row">
+    <div class="medium-6 medium-centered columns text-center">
+      <h1>Dice QTY:</h1>
     </div>
-    <br><br>
-    <div class="row">
-        <div class="medium-10 medium-centered columns text-center">
-            <input type="range" min="1" max="10" value="1" step="1" id="slider">
-        </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="medium-10 medium-centered columns text-center">
+      <input type="range" min="1" max="10" value="1" step="1" id="slider">
     </div>
-    <br><br>
-    <div class="row">
-        <div class="large-2 large-centered columns text-center">
-            <h1 id="sliderQty"></h1>
-        </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="large-2 large-centered columns text-center">
+      <h1 id="sliderQty"></h1>
     </div>
-    <br><br>
-    <div class="row">
-        <div class="medium-4 column medium-centered">
-            <select class="tall" name="dieType" id="dieType">
-                <option>Die Type</option>
-                <option id="d2" value="2">d2</option>
-                <option id="d4" value="4">d4</option>
-                <option id="d6" value="6">d6</option>
-                <option id="d8" value="8">d8</option>
-                <option id="d10" value="10">d10</option>
-                <option id="d12" value="12">d12</option>
-                <option id="d20" value="20">d20</option>
-                <option id="d100" value="100">d100</option>
-            </select>
-        </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="medium-4 column medium-centered">
+      <select class="tall" name="dieType" id="dieType">
+        <option>Die Type</option>
+        <option id="d2" value="2">d2</option>
+        <option id="d4" value="4">d4</option>
+        <option id="d6" value="6">d6</option>
+        <option id="d8" value="8">d8</option>
+        <option id="d10" value="10">d10</option>
+        <option id="d12" value="12">d12</option>
+        <option id="d20" value="20">d20</option>
+        <option id="d100" value="100">d100</option>
+      </select>
     </div>
-    <br><br>
-    <div class="row">
-        <div class="medium-3 columns">.</div>
-        <div class="medium-2 columns">
-            <input type="text" class="tall text-center" id="dieQty">
-        </div>
-        <div class="medium-2 columns tall text-center v-center">
-            <h1><strong>DIE</strong></h1>
-        </div>
-        <div class="medium-2 columns text-center">
-            <input type="text" id="diceType" class="tall text-center">
-        </div>
-        <div class="medium-3 columns text-right">.</div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="medium-3 columns">.</div>
+    <div class="medium-2 columns">
+      <input type="text" class="tall text-center" id="dieQty">
     </div>
-    <br><br><br>
-    <div class="row">
-        <div class="medium-5 columns">
-            <span class="medium tall button large expanded" id="individualsRoll">Individuals</span>
-        </div>
-        <div class="medium-5 columns">
-            <span class="medium button large expanded tall" id="totalRoll">Total</span>
-        </div>
+    <div class="medium-2 columns tall text-center v-center">
+      <h1><strong>DIE</strong></h1>
     </div>
-    <br><br>
-    <div class="row">
-        <div class="medium-8 medium-centered columns text-center">
-            <h1 class="tall medium-expanded"><strong id="results"></strong></h1>
-        </div>
+    <div class="medium-2 columns text-center">
+      <input type="text" id="diceType" class="tall text-center">
     </div>
+    <div class="medium-3 columns text-right">.</div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="medium-5 columns">
+      <span class="medium tall button large expanded" id="individualsRoll">Individuals</span>
+    </div>
+    <div class="medium-5 columns">
+      <span class="medium button large expanded tall" id="totalRoll">Total</span>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="medium-8 medium-centered columns text-center">
+      <h1 class="tall medium-expanded"><strong id="results"></strong></h1>
+    </div>
+  </div>
 </form>
 <!-- SCRIPTS -->
-<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
-<script>
-     // Initialize Firebase
-     var config = {
-          apiKey: "AIzaSyAMTRV6E6X4iM81iTyl5QeFpIgiX_i2dQ0",
-          authDomain: "pwa-dicer-nn.firebaseapp.com",
-          databaseURL: "https://pwa-dicer-nn.firebaseio.com",
-          storageBucket: "pwa-dicer-nn.appspot.com",
-          messagingSenderId: "415488338401"
-     };
-     firebase.initializeApp(config);
-</script>
 <script src="public/javascripts/main.js"></script>
 </body>
 </html>

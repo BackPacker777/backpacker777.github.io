@@ -15,7 +15,8 @@ class main {
 
      static loadServiceWorker() {
           if ('serviceWorker' in navigator) {
-               navigator.serviceWorker.register('/serviceWorker.js');
+               navigator.serviceWorker.register('/ServiceWorker.js')
+                    .then(() => { console.log('Service Worker Registered'); });
           }
      }
 
