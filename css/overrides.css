@@ -1,0 +1,74 @@
+@import 'foundation.css';
+
+@font-face {
+	font-family: EraserDust;
+	src: url(../assets/fonts/EraserDust.woff2);
+}
+
+body {
+	background-color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+.h-center {
+	text-align: center;
+}
+
+.v-center {
+	
+}
+
+.all-center {
+	
+}
+
+#mainContent {
+	background-image: url(../assets/images/chalk_board.jpg);
+	background-size: 100% 100%;
+	height: 100vh;
+	font-family: EraserDust;
+	font-size: 36px;
+	color: white;
+	padding: 5%;
+}
+
+#logo {
+	margin-top: -5%;
+}
+
+.fontMedium {
+	font-size: 28px;
+}
+
+@media only screen and (max-width: 63em) {
+	body {
+		text-align: center;
+	}
+	
+	img {
+		width: 300px;
+		height: 117px;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 39em) {
+	img {
+		width: 200px;
+		height: 78px;
+		max-width: 100%;
+	}
+	
+	#mainContent {
+		font-size: 26px;
+		color: white;
+		padding: 5%;
+	}
+
+	.fontMedium {
+		font-size: 22px;
+	}	
+}
