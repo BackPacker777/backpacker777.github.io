@@ -3,6 +3,7 @@
 @font-face {
 	font-family: EraserDust;
 	src: url(../assets/fonts/EraserDust.woff2);
+	font-display: swap;
 }
 
 body {
@@ -26,13 +27,44 @@ img {
 }
 
 #mainContent {
-	background-image: url(../assets/images/chalk_board.jpg);
-	background-size: 100% 100%;
 	height: 100vh;
-	font-family: EraserDust;
+	width: 100%;
+	font-family: EraserDust, serif;
 	font-size: 36px;
 	color: white;
 	padding: 5%;
+}
+
+#mainContent::before { /* https://coder-coder.com/background-image-opacity */
+	content: "";
+	background-image: url(../assets/images/chalk_board.webp);
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.70;
+}
+
+#mainContent p {
+	position: relative;
+}
+
+#mainContent img {
+	position: relative;
+}
+
+#mainContent a {
+	text-decoration: underline;
+}
+
+#mainContent a:visited {
+	color: hotpink;
+}
+
+#mainContent a:hover {
+	color: orange;
 }
 
 #logo {
