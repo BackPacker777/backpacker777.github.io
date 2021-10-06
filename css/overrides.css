@@ -1,124 +1,124 @@
 @import 'foundation.css';
 
 @font-face {
-	font-family: EraserDust;
-	src: url(../assets/fonts/EraserDust.woff2);
-	font-display: swap;
+    font-family: EraserDust;
+    src: url(../assets/fonts/EraserDust.woff2);
+    font-display: swap;
 }
 
 body {
-	background-color: #000000FF;
-	color: #FFFFFFFF;
-	text-align: center;
+    background-color: #000000FF;
+    color: #FFFFFFFF;
+    text-align: center;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .h-center {
-	text-align: center;
+    text-align: center;
 }
 
 .v-center {
-	
+
 }
 
 .all-center {
-	
+
 }
 
 .main-content {
-	height: 100vh;
-	width: 100%;
-	font-family: EraserDust, serif;
-	font-size: 36px;
-	padding: 5%;
+    height: 100vh;
+    width: 100%;
+    font-family: EraserDust, serif;
+    font-size: 36px;
+    padding: 5%;
 }
 
 .main-content::before { /* https://coder-coder.com/background-image-opacity */
-	content: "";
-	background-image: url(../assets/images/chalk_board.webp);
-	background-size: 100% 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	opacity: 0.70;
+    content: "";
+    background-image: url(../assets/images/chalk_board.webp);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.70;
 }
 
 .main-content p {
-	position: relative;
+    position: relative;
 }
 
 .main-content img {
-	position: relative;
+    position: relative;
 }
 
 .main-content a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .main-content a:visited {
-	color: #FF69B4FF;
+    color: #FF69B4FF;
 }
 
 .main-content a:hover {
-	color: #FFA500FF;
+    color: #FFA500FF;
 }
 
 .logo {
-	margin-top: -5%;
+    margin-top: -5%;
 }
 
 .fontMedium {
-	font-size: 28px;
+    font-size: 28px;
 }
 
 footer {
-	position: relative;
-	bottom: 10px;
-	margin-top: 1em;
+    position: relative;
+    bottom: 10px;
+    margin-top: 1em;
 }
 
 footer p {
-	font-family: Arial, serif;
-	font-size: 18px;
-	margin-top: 1em;
+    font-family: Arial, serif;
+    font-size: 18px;
+    margin-top: 1em;
 }
 
 @media only screen and (max-width: 63em) {
-	
-	.logoImage img {
-		width: 300px;
-		height: 117px;
-		max-width: 100%;
-	}
 
-	.footer img {
-		max-width: 100%;
-	}
+    .logoImage img {
+        width: 300px;
+        height: 117px;
+        max-width: 100%;
+    }
+
+    .footer img {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 39em) {
-	.logoImage img {
-		width: 200px;
-		height: 78px;
-		max-width: 100%;
-	}
+    .logoImage img {
+        width: 200px;
+        height: 78px;
+        max-width: 100%;
+    }
 
-	.footer img {
-		max-width: 100%;
-	}
-	
-	.main-content {
-		font-size: 26px;
-		/*color: white;*/
-		padding: 5%;
-	}
+    .footer img {
+        max-width: 100%;
+    }
 
-	.fontMedium {
-		font-size: 22px;
-	}	
+    .main-content {
+        font-size: 26px;
+        /*color: white;*/
+        padding: 5%;
+    }
+
+    .fontMedium {
+        font-size: 22px;
+    }
 }
