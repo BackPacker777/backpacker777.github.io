@@ -1,0 +1,43 @@
+@use 'elements' as elements;
+@use 'mediaQs' as mediaQs;
+
+body {
+  background-color: $themeBGColor;
+  color: $themeFGColor;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-content {
+  height: 100vh;
+  width: 100%;
+  font-family: EraserDust, Arial, serif;
+  font-size: 36px;
+  padding: 5%;
+}
+
+.main-content::before { /* https://coder-coder.com/background-image-opacity */
+  content: "";
+  background-image: url(../assets/images/chalk_board.webp);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.70;
+}
+
+footer {
+  position: relative;
+  bottom: 10px;
+  margin-top: 1em;
+  p {
+    font-family: Arial, serif;
+    font-size: 18px;
+    margin-top: 1em;
+  }
+}

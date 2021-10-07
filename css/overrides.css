@@ -20,32 +20,14 @@ img {
     text-align: center;
 }
 
-.v-center {
-
-}
-
-.all-center {
-
-}
-
 .main-content {
-    height: 100vh;
+    height: 160vh;
     width: 100%;
-    font-family: EraserDust, serif;
+    font-family: EraserDust, Arial, serif;
     font-size: 36px;
     padding: 5%;
-}
-
-.main-content::before { /* https://coder-coder.com/background-image-opacity */
-    content: "";
-    background-image: url(../assets/images/chalk_board.webp);
+    background: rgba(0, 0, 0, 0.5) url(../assets/images/chalk_board.webp);
     background-size: 100% 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.70;
 }
 
 .main-content p {
@@ -72,14 +54,17 @@ img {
     margin-top: -5%;
 }
 
-.fontMedium {
+.font--medium {
     font-size: 28px;
 }
 
 footer {
+    display: block;
     position: relative;
-    bottom: 10px;
-    margin-top: 1em;
+    /*float: left;*/
+    /*bottom: 10px;*/
+    margin-top: 1.2em;
+    clear: both;
 }
 
 footer p {
@@ -88,9 +73,13 @@ footer p {
     margin-top: 1em;
 }
 
-@media only screen and (max-width: 63em) {
+@media only screen and (max-width: 30em) {
 
-    .logoImage img {
+    .main-content {
+        height: 100vh;
+    }
+
+    .logo-image img {
         width: 300px;
         height: 117px;
         max-width: 100%;
@@ -101,8 +90,8 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 39em) {
-    .logoImage img {
+@media only screen and (max-width: 40em) {
+    .logo-image img {
         width: 200px;
         height: 78px;
         max-width: 100%;
@@ -118,7 +107,7 @@ footer p {
         padding: 5%;
     }
 
-    .fontMedium {
+    .font--medium {
         font-size: 22px;
     }
 }

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: EraserDust;
+  src: url(../assets/fonts/EraserDust.woff2);
+  font-display: swap;
+}
+
+$themeBGColor: #000000FF;
+$themeFGColor: #FFFFFFFF;
+$visitedColor: #FF69B4FF;
+$hoverColor: #FFA500FF;
+
+@mixin bg-img ($image) {
+  background-image: $image;
+}
+
+.font--medium {
+  font-size: 28px;
+}

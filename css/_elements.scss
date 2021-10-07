@@ -1,0 +1,26 @@
+@use 'modifiers' as modifiers;
+
+.main-content p {
+  position: relative;
+}
+
+.main-content img {
+  position: relative;
+}
+
+.main-content a {
+  text-decoration: underline;
+}
+
+.main-content a:visited {
+  color: modifiers.$visitedColor;
+}
+
+.main-content a:hover {
+  color: modifiers.$hoverColor;
+}
+
+.logo-image__img {
+  margin-top: -5%;
+}
+
