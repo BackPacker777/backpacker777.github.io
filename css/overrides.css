@@ -6,6 +6,11 @@
     font-display: swap;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 body {
     background-color: #000000FF;
     color: #FFFFFFFF;
@@ -14,10 +19,7 @@ body {
 
 img {
     max-width: 100%;
-}
-
-.h-center {
-    text-align: center;
+    animation: fadein 4s;
 }
 
 .main-content {
@@ -26,7 +28,7 @@ img {
     font-family: EraserDust, Arial, serif;
     font-size: 36px;
     padding: 5%;
-    background: rgba(0, 0, 0, 0.5) url(../assets/images/chalk_board2.webp);
+    background-image: url(../assets/images/chalk_board2.webp);
     background-size: 100% 100%;
 }
 
@@ -59,18 +61,14 @@ img {
 }
 
 footer {
-    display: block;
-    position: relative;
-    /*float: left;*/
-    /*bottom: 10px;*/
     margin-top: 1.2em;
-    clear: both;
 }
 
 footer p {
     font-family: Arial, serif;
     font-size: 18px;
-    margin-top: 1em;
+    width: 100%;
+    margin-top: 0.6em;
 }
 
 @media only screen and (max-width: 30em) {
@@ -81,29 +79,16 @@ footer p {
 
     .logo-image img {
         width: 300px;
-        height: 117px;
-        max-width: 100%;
-    }
-
-    .footer img {
-        max-width: 100%;
     }
 }
 
 @media only screen and (max-width: 40em) {
     .logo-image img {
         width: 200px;
-        height: 78px;
-        max-width: 100%;
-    }
-
-    .footer img {
-        max-width: 100%;
     }
 
     .main-content {
         font-size: 26px;
-        /*color: white;*/
         padding: 5%;
     }
 
