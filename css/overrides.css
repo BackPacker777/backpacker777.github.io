@@ -25,7 +25,7 @@ img {
 .main-content {
     height: 85%;
     width: 100%;
-    font-family: EraserDust, Arial, serif;
+    font-family: EraserDust, Arial, serif !important;
     font-size: 36px;
     padding: 5%;
     background-image: url(../assets/images/chalk_board2.webp);
@@ -58,6 +58,10 @@ img {
 
 .font--medium {
     font-size: 28px;
+}
+
+.text--shadow {
+    text-shadow: 0 0 4px #000000ff;
 }
 
 footer {
